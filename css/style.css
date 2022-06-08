@@ -6,6 +6,7 @@
     --white75: #afafaf;
     --white50: #6e6e6e;
     --white25: #494949;
+    --cyan: #168FC3;
 }
 
 .bg-darkgrey {
@@ -20,10 +21,40 @@
     background-color: var(--lightgrey) !important;
 }
 
+.bg-cyan {
+    background-color: var(--cyan) !important;
+}
+
+.fg-cyan {
+    color: var(--cyan) !important;
+}
+
+.border-cyan {
+    border-color: var(--cyan) !important;
+}
+
 a {
     color: var(--white) !important;
 }
 
 a:hover {
     color: var(--white50) !important;
+}
+
+.bg-header {
+    background-image: url(../kuvat/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+.custom-margin {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.small-margin {
+    margin: 0 auto;
+    max-width: 300px;
 }
