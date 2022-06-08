@@ -29,16 +29,16 @@
     color: var(--cyan) !important;
 }
 
-.border-cyan {
-    border-color: var(--cyan) !important;
-}
-
 a {
     color: var(--white) !important;
 }
 
 a:hover {
     color: var(--white50) !important;
+}
+
+.text-light {
+    color: var(--white) !important;
 }
 
 .bg-header {
@@ -57,4 +57,8 @@ a:hover {
 .small-margin {
     margin: 0 auto;
     max-width: 300px;
+}
+
+.active {
+    border-bottom: var(--cyan) solid 2px;
 }
