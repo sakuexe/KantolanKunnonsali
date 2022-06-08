@@ -1,0 +1,29 @@
+:root {
+    --darkgrey: #1B2023;
+    --grey: #262A2D;
+    --lightgrey: #403c44;
+    --white: #D9D9D9;
+    --white75: #afafaf;
+    --white50: #6e6e6e;
+    --white25: #494949;
+}
+
+.bg-darkgrey {
+    background-color: var(--darkgrey) !important;
+}
+
+.bg-grey {
+    background-color: var(--grey) !important;
+}
+
+.bg-lightgrey {
+    background-color: var(--lightgrey) !important;
+}
+
+a {
+    color: var(--white) !important;
+}
+
+a:hover {
+    color: var(--white50) !important;
+}
