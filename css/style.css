@@ -135,3 +135,30 @@ a:hover {
 #teltta {
     background-image: url(../kuvat/card-imgs/teltta.jpg);
 }
+
+/* Popup */
+
+.popover {
+    position: relative;
+    max-width: 250px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.popover:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: var(--grey) transparent;
+    border-width: 0 16px 15px;
+    top: -15px;
+    left: 50%;
+    margin-left: -16px;
+}
+
+.return-link:hover +.popover {
+    opacity: 100%;
+}
