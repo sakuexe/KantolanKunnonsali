@@ -31,6 +31,7 @@
 
 a {
     color: var(--white) !important;
+    transition: .5s ease;
 }
 
 a:hover {
@@ -65,33 +66,7 @@ a:hover {
 
 /* Galleria */
 
-.gallery {
-	display: grid;
-	grid-template-columns: repeat(10, 40vw);
-	grid-template-rows: 2fr;
-	grid-column-gap: 4rem;
-	grid-row-gap: 1rem;
-	overflow: scroll;
-	height: 12rem;
-	scroll-snap-type: both mandatory;
-}
 
-.active-img {
-	scroll-snap-type: unset;
-}
-
-.gallery li {
-    width: 16rem;
-    background-color: #168FC3;
-	scroll-snap-align: center;
-	display: inline-block;
-	border-radius: 3px;
-	font-size: 0;
-}
-
-.gallery li:nth-child(even) {
-    background-color: aquamarine;
-}
 
 /* kalustovuokraus */
 
