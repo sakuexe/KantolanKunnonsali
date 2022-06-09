@@ -62,3 +62,76 @@ a:hover {
 .active {
     border-bottom: var(--cyan) solid 2px;
 }
+
+/* Galleria */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(10, 40vw);
+	grid-template-rows: 2fr;
+	grid-column-gap: 4rem;
+	grid-row-gap: 1rem;
+	overflow: scroll;
+	height: 12rem;
+	scroll-snap-type: both mandatory;
+}
+
+.active-img {
+	scroll-snap-type: unset;
+}
+
+.gallery li {
+    width: 16rem;
+    background-color: #168FC3;
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+}
+
+.gallery li:nth-child(even) {
+    background-color: aquamarine;
+}
+
+/* kalustovuokraus */
+
+#kalustovuokraus {
+    background-image: url(../kuvat/kalustovuokraus.jpg);
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img {
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    transition: 0.5s ease;
+}
+
+.card-img:hover {
+    padding: 7rem 0;
+}
+
+#jattipannu {
+    background-image: url(../kuvat/card-imgs/jattipannu.jpg);
+}
+
+#kaasugrilli {
+    background-image: url(../kuvat/card-imgs/kaasugrilli.jpg);
+}
+
+#kahvikone {
+    background-image: url(../kuvat/card-imgs/kahvikone.jpg);
+}
+
+#kaasukannu {
+    background-image: url(../kuvat/card-imgs/kaasukannu.jpg);
+}
+
+#teltta {
+    background-image: url(../kuvat/card-imgs/teltta.jpg);
+}
