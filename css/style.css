@@ -60,8 +60,18 @@ a:hover {
     max-width: 300px;
 }
 
+li {
+    transition: 1s ease;
+}
+
 li .active {
     border-bottom: var(--cyan) solid 2px;
+}
+
+@media (max-width: 768px) {
+    .nav-hide {
+        display: none;
+    }
 }
 
 /* Galleria */
