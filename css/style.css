@@ -60,13 +60,33 @@ a:hover {
     max-width: 300px;
 }
 
-.active {
+li .active {
     border-bottom: var(--cyan) solid 2px;
 }
 
 /* Galleria */
 
+.img-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
 
+.img-container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.img-slider {
+    width: 20em;
+    padding: 0 1em;
+    /* scroll-snap-align: start; */
+}
+
+.mouse-hold {
+    scroll-snap-type: unset;
+}
 
 /* kalustovuokraus */
 
@@ -95,7 +115,7 @@ a:hover {
     background-image: url(../kuvat/card-imgs/jattipannu.jpg);
 }
 
-#kaasugrilli {
+#makkaragrilli {
     background-image: url(../kuvat/card-imgs/kaasugrilli.jpg);
 }
 
@@ -103,7 +123,7 @@ a:hover {
     background-image: url(../kuvat/card-imgs/kahvikone.jpg);
 }
 
-#kaasukannu {
+#kaasupullo {
     background-image: url(../kuvat/card-imgs/kaasukannu.jpg);
 }
 
