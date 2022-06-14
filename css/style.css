@@ -87,6 +87,33 @@ li .active {
     }
 }
 
+/*Pääsivu-meistä osio*/
+
+.meista-bg-title{
+    background-image: url(../kuvat/meistä-bg-title.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/*Pääsivu-hinnasto*/
+.hinnasto-bg-title{
+    background-image: url(../kuvat/meistä-bg-title.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+/*Palvelut*/
+.palvelut-bg-title{
+    background-image: url(../kuvat/meistä-bg-title.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 /* Galleria */
 
 .img-container {
