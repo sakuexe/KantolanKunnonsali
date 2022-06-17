@@ -1,3 +1,5 @@
+// galleria sivun kuva slideri
+
 const slider = document.querySelector('.gallery')
 let isDown = false
 let startX
@@ -26,3 +28,25 @@ slider.addEventListener('mousemove', e => {
     const walk = (x - startX) * SCROLL_SPEED
     slider.scrollLeft = scrollLeft - walk
 })
+
+
+// galleria sivun fullscreen galleria -modali
+
+const galleryButton = document.getElementById("gallery-btn")
+const galleryModal = document.getElementById("gallery-modal")
+const navBar = document.getElementsByTagName("nav")[0]
+
+galleryButton.addEventListener("click", _ => {
+    galleryModal.classList.add("visible")
+    navBar.classList.add("d-none")
+})
+
+galleryModal.addEventListener("click", clickedElement => {
+    if (clickedElement.target.classList.contains("middle")) {
+        console.log(clickedElement.target)
+        galleryModal.classList.remove("visible")
+        navBar.classList.remove("d-none")
+    }
+})
+
+// gallerialista

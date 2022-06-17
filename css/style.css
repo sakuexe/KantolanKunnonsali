@@ -182,3 +182,46 @@ li .active {
 .return-link:hover +.popover {
     opacity: 100%;
 }
+
+/* Fullscreen galleria modal */
+
+.gallery-modal {
+    display: none;
+    opacity: 0;
+    z-index: 10 !important;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    transition: ease 1s;
+    backdrop-filter: blur(15px) brightness(40%);
+}
+
+.gallery-modal.visible {
+    transition: ease 1s;
+    display: block;
+    opacity: 100%;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }

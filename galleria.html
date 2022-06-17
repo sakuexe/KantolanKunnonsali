@@ -85,22 +85,25 @@
 
                 <h2 class="display-2 fw-bold text-center my-0">Galleria</h2>
                 <a href="kuvagalleria.html" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#galleriaModal">
-                    <p class="my-0 text-center mb-4 opacity-75 fs-5">Selaa salimme kuvia tästä ></p>
+                    <p class="my-0 text-center opacity-75 fs-5">Selaa salimme kuvia tästä ></p>
                 </a>
+                <div href="kuvagalleria.html" class="opacity-75" id="gallery-btn">
+                    <p class="my-0 text-center mb-4 opacity-75 fs-5">Custom galleria modal ></p>
+                </div>
                 
             </div>
 
             <div class="img-container gallery">
-                <img src="kuvat/card-imgs/jattipannu.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/kaasugrilli.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/kaasukannu.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/teltta.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/kahvikone.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/jattipannu.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/kaasugrilli.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/kaasukannu.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/teltta.jpg" alt="" class="img-slider">
-                <img src="kuvat/card-imgs/kahvikone.jpg" alt="" class="img-slider">
+                <img src="kuvat/galleria/aula.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/jalkapressi.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/kahvakuula.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/levypainot.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/proteiinipatukat.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/rautaa.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/taljat.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/vinopenkki.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/juoksumatto.webp" alt="" class="img-slider">
+                <img src="kuvat/galleria/kuntopyorat.webp" alt="" class="img-slider">
             </div>
 
         </div>
@@ -237,7 +240,8 @@
         </div>
     </section>
 
-    <!-- Modal -->
+    <!-- Bootstrap Modal -->
+    <!--
     <div class="modal fade" id="galleriaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
         <div class="modal-content bg-grey text-center text-light">
@@ -281,6 +285,108 @@
         </div>
         </div>
     </div>
+    -->
+    
+    <!-- itse tehty full screen galleria -modal-->
+    <section class="gallery-modal" id="gallery-modal">
+        <div class="container">
+
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <!-- Gallerian kuvat -->
+                            <div class="carousel-item active">
+                                <img src="kuvat/galleria/aula.webp" class="d-block w-100" alt="kunnonsalin aula">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/jalkapressi.webp" class="d-block w-100" alt="kunnonsalin jalkapressi">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/juoksumatto.webp" class="d-block w-100" alt="kunnonsalin juoksumatto">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/kahvakuula.webp" class="d-block w-100" alt="kunnonsalin kahvakuulia">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/kasipainot.webp" class="d-block w-100" alt="kunnonsalin käsipainoja">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/kuntopyorat.webp" class="d-block w-100" alt="kunnonsalin kuntopyörat">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/laitteet-1.webp" class="d-block w-100" alt="kunnonsalin laitteita ja tilaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/laitteet-2.webp" class="d-block w-100" alt="kunnonsalin salista kuvaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/kasipainot-pysty.webp" class="d-block w-100" alt="kunnonsalin monenlaisia käsipainoja">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/levypainot.webp" class="d-block w-100" alt="kunnonsalin levypainoja">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/maastaveto.webp" class="d-block w-100" alt="kunnonsalin maastaveto laitteet">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/proteiinipatukat.webp" class="d-block w-100" alt="kunnonsalilta ostettavia proteiinipatukoita">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/rakki.webp" class="d-block w-100" alt="kunnonsalin kyykkyräkki">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/rautaa.webp" class="d-block w-100" alt="kunnonsalin isoimpia käsipainoja">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/saunaovi.webp" class="d-block w-100" alt="kunnonsalin sauna">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/taljat.webp" class="d-block w-100" alt="kunnonsalin painonnosto taljat">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="kuvat/galleria/kasipainot-pysty2.webp" class="d-block w-100" alt="kunnonsalin pienempiä käsipainoja">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+        </div>
+    </section>
 
     <!-- Tyhjä tila -->
     <section class="my-5">
