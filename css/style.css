@@ -225,3 +225,12 @@ li .active {
     margin-right: auto;
     width: 90%;
   }
+
+.carousel-indicators {
+    bottom: -3rem !important;
+}
+
+.carousel-indicators button.active {
+    transition: ease .5s;
+    background-color: var(--cyan);
+}
