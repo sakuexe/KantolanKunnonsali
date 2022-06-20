@@ -101,6 +101,7 @@ li .active {
 
 .img-container::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
+    
 }
 
 .img-slider {
