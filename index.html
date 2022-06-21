@@ -124,20 +124,21 @@
             <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
                 <div class="container">
                     <div class="custom-margin">
-                        <h2 class="display-2 fw-bold text-center my-0">Palvelut</h2>
+                        <h2 class="display-2 fw-bold text-center my-0">Meistä</h2>
                         <p class="my-0 text-center mb-4 opacity-75 fs-5">“Hyvä sali, halvat hinnat, reilu meininki!”</p>
                     </div>
                 </div>
             </div>
-            <div class="container ">
+
+            <div class="container">
                 <div class="custom-margin my-5">
                     <div>
-                        <p>KunnonSali tarjoaa kuntosalipalveluita sekä yksityisille että yrityksille.
-                        </p>
+                        <p>KunnonSali tarjoaa kuntosalipalveluita sekä yksityisille että yrityksille.</p>
                         <p>Meillä on hinta-laatusuhde enemmän kuin kohdallaan: tutustu hinnastoomme! Meiltä voit myös vuokrata mm. paellapannuja (halkaisija 1m), makkaragrillejä, kahvinkeittimiä yms. kalustoa juhliin ja messuille.</p>
-                        <p>Kunnon Sali sijaitsee Hämeenlinnassa, Kantolan vanhassa puusepäntehtaassa.</p>
+                        <p>KunnonSali sijaitsee Hämeenlinnassa, Kantolan vanhassa puusepäntehtaassa.</p>
                     </div>
-                    <p class="opacity-75">Lisäravinteita</p>
+
+                    <p class="opacity-75">Lisäravinteita</p>    <!-- Tähän ehkä se isompi emphasis (Enemmän arvoa otsikolle verrattuna muihin teksteihin) -->
 
                     <ul>
                         <li class="fw-semibold py-2">Leader</li>
@@ -146,7 +147,6 @@
                         </div>
                         <li class="fw-semibold py-2">Leader</li>
                     </ul>
-
                     
                     <p class="opacity-75 mt-3">Tervetuloa tutustumaan!</p>
                 </div>
@@ -155,61 +155,35 @@
         </div>
     </section>
 
-        <!-- Hinnasto -->
-        <section class="text-light mt-5">
-            <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
-                <div class="container">
-                    <div class="custom-margin">
-                        <h2 class="display-2 fw-bold text-center my-0">Hinnasto</h2>
-                        <p class="my-0 text-center mb-4 opacity-75 fs-5">“Hyvä sali, halvat hinnat, reilu meininki!”</p>
-                    </div>
+    <!-- Hinnasto -->
+    <section class="text-light mt-5">
+        <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
+            <div class="container">
+                <div class="custom-margin">
+                    <h2 class="display-2 fw-bold text-center my-0">Hinnasto</h2>
+                    <p class="my-0 text-center mb-4 opacity-75 fs-5">“Hyvä sali, halvat hinnat, reilu meininki!”</p>
                 </div>
             </div>
-            <div class="container custom-margin">
-                <div class=" d-flex justify-content-between">
-                    
-                    <div class="card bg-darkgrey my-4" style="width: 16rem;">
-                        <div class="card-body p-0">
-                            <h4 class="card-title text-center my-2">Normaali</h4>
-                            <div class="text-center bg-grey p-4">
-                                <p class="card-subtitle opacity-75">Kuukausikortti</p>
-                                <p class="mb-0"><span class="display-4 fw-bold"> 43.00£</span>/kk</p>
-                            </div>
-                            <ul class="list-group bg-transparent list-unstyled">
-                                <div class="d-flex bg-transparent  justify-content-between">
-                                    <li class=" text-light p-2 mx-2">Kertakäynti</li>
-                                    <li class=" text-light p-2 mx-2 fw-bold ">6.50£</li>
-                                </div>
-                                <div class="d-flex bg-grey justify-content-between">
-                                    <li class=" text-light p-2 mx-2">10 Kerran&shy; kortti</li>
-                                    <li class=" text-light p-2 mx-2 fw-bold">43.00£</li>
-                                </div>
-                                <div class="d-flex bg-transparent  justify-content-between">
-                                    <li class=" text-light p-2 mx-2 ">Puolivuosi&shy;kortti</li>
-                                    <li class=" text-light p-2  mx-2 fw-bold">216.00£</li>
-                                </div>
-                                <div class="d-flex bg-grey justify-content-between">
-                                    <li class=" text-light p-2 mx-2 ">Vuosikortti</li>
-                                    <li class=" text-light p-2 mx-2 fw-bold">396.00£</li>
-                                </div>
-                            </ul>
-                        </div>
-                </div>
-                <div class="card bg-darkgrey my-4 " style="width: 16rem;">
+        </div>
+        <div class="container custom-margin">
+            <div class=" d-flex justify-content-between">
+                
+                <!-- Normaali -hintakortti-->
+                <div class="card bg-darkgrey my-4" style="width: 16rem;">
+                    <div class="card-header bg-transparent border-0 text-center my-1 fs-4 fw-semibold">Normaali</div>   <!-- .card-headeria kannattaa käyttää, helpottaa myös luettavuutta-->
                     <div class="card-body p-0">
-                    <h4 class="card-title text-center my-2">Jäsen</h4>
-                    <div class="text-center bg-cyan p-4">
-                        <p class="card-subtitle opacity-75">Kuukausikortti</p>
-                        <p class="mb-0"><span class="display-5 fw-bold"> 36.00&euro;</span>/kk</p>
-                    </div>
+                        <div class="text-center bg-grey p-4">
+                            <p class="card-subtitle opacity-75">Kuukausikortti</p>
+                            <p class="mb-0"><span class="display-4 fw-bold"> 43.00£</span>/kk</p>
+                        </div>
                         <ul class="list-group bg-transparent list-unstyled">
-                            <div class="d-flex bg-transparent  justify-content-between">
-                                <li class=" text-light p-2 mx-2">Kertakäynti</li>
-                                <li class=" fg-cyan p-2 mx-2 fw-bold ">5.50£</li>
+                            <div class="d-flex bg-transparent  justify-content-between">    <!-- Tähän suosittelen mielummin käyttämään vaan .row ja .coleja, helpompi muokata ja lukea -->
+                                <li class=" text-light p-2 mx-2">Kertakäynti</li>           <!-- Varsinkin koska niissä d-flexit ja muut on jo valmiina, helpottaa tekemistä tehdä valmiilla preseteillä -->
+                                <li class=" text-light p-2 mx-2 fw-bold ">6.50£</li>
                             </div>
                             <div class="d-flex bg-grey justify-content-between">
                                 <li class=" text-light p-2 mx-2">10 Kerran&shy; kortti</li>
-                                <li class=" fg-cyan p-2 mx-2 fw-bold">36.00£</li>
+                                <li class=" text-light p-2 mx-2 fw-bold">43.00£</li>
                             </div>
                             <div class="d-flex bg-transparent  justify-content-between">
                                 <li class=" text-light p-2 mx-2 ">Puolivuosi&shy;kortti</li>
@@ -220,14 +194,46 @@
                                 <li class=" text-light p-2 mx-2 fw-bold">396.00£</li>
                             </div>
                         </ul>
+                    </div>
+                </div>
+
+                <!-- Jäsen -hintakortti-->
+                <div class="card bg-darkgrey my-4 " style="width: 16rem;">
+                    <div class="card-header bg-transparent border-0 text-center my-1 fs-4 fw-semibold">Jäsen</div>
+                    <div class="card-body p-0">
+                        <div class="text-center bg-cyan p-4">
+                            <p class="card-subtitle opacity-75 text-break">Kuukausikortti</p>
+                            <p class="mb-0"><span class="display-5 fw-bold"> 36.00&euro;</span>/kk</p>
+                        </div>
+                        <ul class="list-group bg-transparent list-unstyled">
+                            <div class="d-flex bg-transparent justify-content-between">
+                                <li class="text-light p-2 mx-2 text-break">Kertakäynti</li>
+                                <li class="fg-cyan p-2 mx-2 fw-bold ">5.50£</li>
+                            </div>
+                            <div class="d-flex bg-grey justify-content-between">
+                                <li class="text-light p-2 mx-2 text-break">10 Kerran kortti</li>    <!-- .text-break lisää word breakin tekstiin -->
+                                <li class="fg-cyan p-2 mx-2 fw-bold">36.00£</li>
+                            </div>
+                            <div class="d-flex bg-transparent  justify-content-between">
+                                <li class="text-light p-2 mx-2 text-break">Puolivuosi&shy;kortti</li>
+                                <li class="text-light p-2  mx-2 fw-bold">216.00£</li>
+                            </div>
+                            <div class="d-flex bg-grey justify-content-between">
+                                <li class="text-light p-2 mx-2 text-break">Vuosikortti</li>
+                                <li class="text-light p-2 mx-2 fw-bold">396.00£</li>
+                            </div>
+                        </ul>
 
                     </div>
                 </div>
-                </div>
+            </div>
+            <!-- class="custom-margin" kannattaa käyttää parent divinä, sen sijasta että sitä käyttäisi suoraan elementissä -->
+
                 <p class="text-center bg-cyan p-2 custom-margin">Jäsenmaksu*<span class="fw-bold"> 23£</span>/vuosi</p>
                 <p class="opacity-75 text-center small-margin my-2"><span class="fw-bold fs-5">*</span> Opiskelijat ja työttömät maksavat   jäsenhinnan. Muistahan esittää opiskelija- tai työkkärikorttisi.</p>
-              
-            </div>  
+                <!-- small-margini:t näissä vähän turhan oloiset, wrappaamalla elementit custom-marginilla todennäköisesti pärjäisi -->
+
+            </div>
             <div class="bg-grey text-center p-3 mt-3">
                     <p class="fg-cyan fw-bold m-0">HUOM!</p>
                     <p class="small-margin">Voit myös lunastaa kuntosalille avainkortin, joka mahdollistaa vapaan kulkemisen kuntosalille joka päivä klo 06:00 - 22:30 välisenä aikana.</p>
@@ -239,16 +245,26 @@
         <!-- logot -->
         <section>
             <h2 class="text-center text-light my-5">Yhteistyökumppanit</h2>
-            <div class="container mb-4 custom-margin">
-                  <div class="row align-items-center justify-content-between">
+            <div class="container mb-4 custom-margin">  <!-- .container ja .custom-margin toimivat oikein kun ne ovat eri diveissä -->
+
+                <!-- <div class="container"> 
+                        <div class="custom-margin">
+                            ... Sisältö ...
+                        </div>
+                     </div>
+
+                     container sisältää omia break pointteja, niin erittelyllä varmistetaan ettei rikota containerin taikka custom marginin toimintaa
+                -->
+
+                  <div class="row align-items-center justify-content-between">  
                       <div class="col-md small-margin">
-                          <img src="kuvat/logot/Edenred.png" class="w-50 d-block mx-auto" alt="">
+                          <img src="kuvat/logot/Edenred.png" class="w-50 d-block mx-auto" alt="Edenred -logo">
                       </div>
                       <div class="col-md">
-                        <img src="kuvat/logot/epassi.png" class="w-50 d-block mx-auto" alt="">
+                        <img src="kuvat/logot/epassi.png" class="w-50 d-block mx-auto" alt="Epassi -logo">
                       </div>
                       <div class="col-lg">
-                          <img src="kuvat/logot/smartum.png" class="w-50 d-block mx-auto" alt="">
+                          <img src="kuvat/logot/smartum.png" class="w-50 d-block mx-auto" alt="Smartum -logo">
                       </div>
                   </div>
             </div>
