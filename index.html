@@ -121,7 +121,7 @@
 
         <!--Meistä--> 
         <section class="text-light">
-            <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
+            <div class="bg-image pb-3 pt-5" id="meista">
                 <div class="container">
                     <div class="custom-margin">
                         <h2 class="display-2 fw-bold text-center my-0">Meistä</h2>
@@ -157,7 +157,7 @@
 
     <!-- Hinnasto -->
     <section class="text-light mt-5">
-        <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
+        <div class="bg-image pb-3 pt-5" id="hinnasto">
             <div class="container">
                 <div class="custom-margin">
                     <h2 class="display-2 fw-bold text-center my-0">Hinnasto</h2>
@@ -179,7 +179,7 @@
                         <ul class="list-group bg-transparent list-unstyled">
                             <div class="d-flex bg-transparent  justify-content-between">    <!-- Tähän suosittelen mielummin käyttämään vaan .row ja .coleja, helpompi muokata ja lukea -->
                                 <li class=" text-light p-2 mx-2">Kertakäynti</li>           <!-- Varsinkin koska niissä d-flexit ja muut on jo valmiina, helpottaa tekemistä tehdä valmiilla preseteillä -->
-                                <li class=" text-light p-2 mx-2 fw-bold ">6.50£</li>
+                                <li class=" text-light p-2 mx-2 fw-bold ">6.50£</li>        <!-- Plus niiden avulla tulee valmiina responsiivisuus breakpointteja jottei elementit littaannu niinkuin atm-->
                             </div>
                             <div class="d-flex bg-grey justify-content-between">
                                 <li class=" text-light p-2 mx-2">10 Kerran&shy; kortti</li>
@@ -226,6 +226,7 @@
 
                     </div>
                 </div>
+
             </div>
             <!-- class="custom-margin" kannattaa käyttää parent divinä, sen sijasta että sitä käyttäisi suoraan elementissä -->
 
@@ -241,6 +242,75 @@
                 <p class="text-center small-margin my-2">Avainkortin hinta: 5.00€
                     Maksu toimii panttina, eli palautetaan avainkorttia vastaan</p>
         </section>
+        
+        <!-- Esimerkki yhdestä tavasta käyttää .col:in breakpointteja, kannattaa poistaa jossain vaiheessa :D
+
+        <div class="container my-5">
+            <div class="custom-margin">
+                <h3 class="text-center text-light mb-5">Esimerkki <code>.col</code> breakpointeista</h3>
+                <div class="row justify-content-center">
+                    <div class="col-sm align-self-end">
+
+                        <div class="card border-0 mb-3 bg-darkgrey text-light mx-auto" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent text-center fs-3 fw-semibold">Header</div>
+                            <div class="card-body p-0">
+                                <div class="bg-grey w-100 py-4 text-center">
+                                    <p class="my-0">Kuukausikortti</p>
+                                    <p class="display-3 my-0 fw-bold">on</p>
+                                </div>
+                                <div class="row px-2 mx-0">
+                                    <div class="col py-3">
+                                        <p class="my-0">tekstiä</p>
+                                    </div>
+                                    <div class="col text-end py-3">
+                                        <p class="my-0">216.00€</p>
+                                    </div>
+                                </div>
+                                <div class="row px-2 bg-grey mx-0">
+                                    <div class="col py-3">
+                                        <p class="my-0">tekstiä</p>
+                                    </div>
+                                    <div class="col text-end py-3">
+                                        <p class="my-0">216.00€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm align-self-end">
+
+                        <div class="card border-0 mb-3 bg-darkgrey text-light mx-auto" style="max-width: 18rem;">
+                            <div class="card-header bg-transparent text-center fs-3 fw-semibold">Header</div>
+                            <div class="card-body p-0">
+                                <div class="bg-cyan w-100 py-4 text-center">
+                                    <p class="my-0">Kuukausikortti</p>
+                                    <p class="display-3 my-0 fw-bold">ei ole</p>
+                                </div>
+                                <div class="row px-2 mx-0">
+                                    <div class="col py-3">
+                                        <p class="my-0">tekstiä</p>
+                                    </div>
+                                    <div class="col text-end py-3">
+                                        <p class="my-0">216.00€</p>
+                                    </div>
+                                </div>
+                                <div class="row px-2 bg-grey mx-0">
+                                    <div class="col py-3">
+                                        <p class="my-0">tekstiä</p>
+                                    </div>
+                                    <div class="col text-end py-3">
+                                        <p class="my-0">216.00€</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        
 
         <!-- logot -->
         <section>
@@ -275,7 +345,7 @@
 
         <!--Palvelut-->
         <section class="text-light">
-            <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
+            <div class="bg-image pb-3 pt-5" id="palvelut">
                 <div class="container">
                     <div class="custom-margin">
                         <h2 class="display-2 fw-bold text-center my-0">Palvelut</h2>
@@ -301,19 +371,31 @@
             </div>
         </section>
 
+        <!-- Kalustovuokraus & Galleria -->
         <section class="my-5 text-light">
-            <div class="bg-image pb-3 pt-5" id="kalustovuokraus">
+            <div class="bg-image pb-3 pt-5" id="kalusto-galleria">
                 <div class="container">
                     <div class="custom-margin">
-                        <h2 class="display-2 fw-bold text-center my-0">Kalustovuokraus&shy; & Galleria</h2>
-                        <p class="my-0 text-center mb-4 opacity-75 fs-5">Löytyy toiselta sivulta ></p>
+                        <h2 class="display-2 fw-bold text-center my-0">Kalustovuokraus&shy; & Galleria</h2>     <!-- Tässä tilanteessa &shy; ei tee mitään -->
+                        <p class="my-0 text-center mb-4 opacity-75 fs-5">Löytyy toiselta sivulta ></p>          <!-- sillä html tekee rivinvaihdot automaattisesti sanojen väliin -->
                     </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="custom-margin">
+                    <!-- .row .col? -->
+                    <img src="kuvat/galleria-nelio.jpg" alt="galleria thumbnail" class="thumbnail w-100">
+                    <!-- olen kuvan päällinen flavor text -->
+                    
+                    <img src="kuvat/vuokra-nelio.jpg" alt="Kalustovuokraus thumbnail" class="thumbnail w-100">
                 </div>
             </div>
         </section>
     </main>
-       <!-- Palaa ylös -->
-       <section class="my-5">
+
+    <!-- Palaa ylös -->
+    <section class="my-5">
         <div class="container">
             <div class="custom-margin">
                 <a href="#" class="return-link">
@@ -325,6 +407,7 @@
             </div>
         </div>
     </section>
+
     <!-- Tyhjä tila -->
     <section class="my-5">
         <div class="container py-5"></div>

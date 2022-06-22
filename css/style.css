@@ -62,6 +62,29 @@ a:hover:not(.logoteksti):not(li a) {
     /* background-attachment: fixed; */
 }
 
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+#kalusto-galleria {
+    background-image: url(../kuvat/palvelut.jpg);
+}
+
+#palvelut {
+    background-image: url(../kuvat/palvelut.jpg);
+}
+
+#hinnasto {
+    background-image: url(../kuvat/hinnasto.jpg);
+}
+
+#meista {
+    background-image: url(../kuvat/meista.jpg);
+}
+
 .custom-margin {
     margin: 0 auto;
     max-width: 700px;
@@ -87,6 +110,14 @@ li .active {
     }
 }
 
+.thumbnail {
+    filter: brightness(80%) saturate(0%);
+    transition: .5s ease;
+}
+
+.thumbnail:hover {
+    filter: brightness(40%) saturate(90%) drop-shadow(0 1em 1em rgba(2, 19, 34, 0.5));
+}
 
 
 /* Galleria */
@@ -117,10 +148,6 @@ li .active {
 
 #kalustovuokraus {
     background-image: url(../kuvat/kalustovuokraus.jpg);
-    background-position: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card-img {
@@ -163,7 +190,7 @@ li .active {
     max-width: 250px;
     border-radius: 10px;
     opacity: 0;
-    transition: 0.5s ease;
+    transition: 0.5s .2s ease;
 }
 .popover:after {
     content: '';
@@ -181,6 +208,7 @@ li .active {
 
 .return-link:hover +.popover {
     opacity: 100%;
+    filter: drop-shadow(2px 2px 10px rgba(11, 28, 59, 0.288));
 }
 
 /* Fullscreen galleria modal */
