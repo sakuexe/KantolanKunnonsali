@@ -43,7 +43,6 @@ galleryButton.addEventListener("click", _ => {
 
 galleryModal.addEventListener("click", clickedElement => {
     if (clickedElement.target.classList.contains("middle")) {
-        console.log(clickedElement.target)
         galleryModal.classList.remove("visible")
         navBar.classList.remove("d-none")
     }
