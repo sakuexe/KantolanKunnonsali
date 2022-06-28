@@ -46,7 +46,7 @@ a:hover {
     color: var(--white50) !important;
 }
 
-a:hover:not(.logoteksti):not(li a) {
+a:hover:not(.logoteksti):not(li a):not(.btn) {
     text-decoration: underline !important;
 }
 
@@ -185,7 +185,10 @@ li .active {
 }
 
 #teltta {
-    background-image: url(../kuvat/card-imgs/teltta.jpg);
+    /* 
+    background-image: url(../kuvat/card-imgs/teltta.jpg);   -käytä tätä kun teltta on mukana valikoimassa
+    */
+    background-image: url(../kuvat/card-imgs/teltta-disabled.jpg);
 }
 
 /* Popup */
