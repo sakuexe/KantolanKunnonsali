@@ -85,9 +85,16 @@ a:hover:not(.logoteksti):not(li a):not(.btn) {
     background-image: url(../kuvat/meista.jpg);
 }
 
+
+
 .custom-margin {
     margin: 0 auto;
     max-width: 700px;
+}
+
+.custom2-margin{
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .small-margin {
