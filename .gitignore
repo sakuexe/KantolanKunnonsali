@@ -8,6 +8,8 @@
 *.wasm
 *.wat
 *.xhtml
+.vscode/*
+.vscode\*
 
 ### Personal ###
 

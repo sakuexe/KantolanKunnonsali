@@ -10,6 +10,7 @@ slider.addEventListener('mousedown', e => {
     slider.classList.add('mouse-hold')
     startX = e.pageX - slider.offsetLeft
     scrollLeft = slider.scrollLeft
+    checkOffset(document.getElementsByClassName('img-slider'))
 })
 slider.addEventListener('mouseleave', _ => {
     isDown = false
@@ -18,7 +19,7 @@ slider.addEventListener('mouseleave', _ => {
 slider.addEventListener('mouseup', _ => {
     isDown = false
     slider.classList.remove('mouse-hold')
-    console.log(document.querySelector(".img-slider:visible"))
+    //console.log(document.querySelector(".img-slider:visible"))
 })
 slider.addEventListener('mousemove', e => {
     if (!isDown) return
@@ -49,3 +50,18 @@ galleryModal.addEventListener("click", clickedElement => {
 })
 
 // gallerialista
+
+let leftScroll = document.querySelector("#left-scroll")
+let rightScroll = document.querySelector("#right-scroll")
+
+console.log(rightScroll, leftScroll)
+
+leftScroll.addEventListener('mousedown', element => {
+    console.log()
+    slider.scrollLeft -= 322
+})
+
+rightScroll.addEventListener('mousedown', element => {
+    console.log()
+    slider.scrollLeft += 322
+})
