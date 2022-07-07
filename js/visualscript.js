@@ -7,7 +7,6 @@ firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
     if (navHeader.innerHTML !== currentSection.innerHTML) {
         
         navHeader.innerHTML = currentSection.innerHTML
-        console.log(currentSection, navHeader)
 
         if (!currentSection.parentElement.classList.contains("nav-hide")) {
 

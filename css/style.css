@@ -1,4 +1,7 @@
 :root {
+    /*
+        :root sisältää käytetyt värit nettisivulla muuttujissa, jotta värien muuttaminen on helppoa
+    */
     --darkgrey: #1B2023;
     --grey: #262A2D;
     --lightgrey: #403c44;
@@ -8,6 +11,8 @@
     --white25: #494949;
     --cyan: #168FC3;
 }
+
+/* Omat background ja foreground väri -classit */
 
 .bg-darkgrey {
     background-color: var(--darkgrey) !important;
@@ -34,8 +39,10 @@
     to right top,
     #216b8bb0 -20%,
     #262A2D 60%
-) !important;
+    ) !important;
 }
+
+/* Yleisiä elementtikorjauksia */
 
 a {
     color: var(--white) !important;
@@ -54,12 +61,48 @@ a:hover:not(.logoteksti):not(li a):not(.btn):not(.thumbnail-link) {
     color: var(--white) !important;
 }
 
+li {
+    transition: 1s ease;
+}
+
+li .active {
+    border-bottom: var(--cyan) solid 2px;
+    opacity: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-hide {
+        display: none; /* Piilottaa aktiivisen sivun navigaatio elementin listasta, kun se näytetään isompana otsikkona listan päällä */
+    }
+}
+
+/* Omat sisennys classit, joita käytetään .containerin ensimmäisessä lapsielementissä */
+
+.custom-margin {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.hintacards-margin {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.small-margin {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+/* Background kuvat */
+
 .bg-header {
     background-image: url(../kuvat/header-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    /*
+        Jos haluaa parallax efektin nettisivun taustakuville niin käyttää tätä.
+    */
 }
 
 .bg-image {
@@ -83,38 +126,6 @@ a:hover:not(.logoteksti):not(li a):not(.btn):not(.thumbnail-link) {
 
 #meista {
     background-image: url(../kuvat/meista.jpg);
-}
-
-
-
-.custom-margin {
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-.custom2-margin{
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.small-margin {
-    margin: 0 auto;
-    max-width: 300px;
-}
-
-li {
-    transition: 1s ease;
-}
-
-li .active {
-    border-bottom: var(--cyan) solid 2px;
-    opacity: 100%;
-}
-
-@media (max-width: 768px) {
-    .nav-hide {
-        display: none;
-    }
 }
 
 .thumbnail {
@@ -145,6 +156,7 @@ li .active {
 
 /* Galleria */
 
+/* slider galleria classeja */
 .img-container {
     overflow-x: scroll;
     white-space: nowrap;
@@ -169,6 +181,24 @@ li .active {
 
 .mouse-hold {
     scroll-snap-type: unset;
+}
+
+.thumbnail-indicators {
+    background-color: var(--white);
+    height: 10px;
+    width: 10px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.thumbnail-indicators.active {
+    background-color: var(--cyan);
+    opacity: 100% !important;
+    box-shadow: 0 0 1em var(--cyan);
+}
+
+#left-scroll p, #right-scroll p {
+    cursor: pointer;
 }
 
 /* kalustovuokraus */
@@ -277,19 +307,26 @@ li .active {
     left: 0;
     height: 100%;
     width: 100%;
+    margin-bottom: 3em;
   }
   
   .middle {
     display: table-cell;
     vertical-align: middle;
-    height: 100%;
+    max-height: 1000px;
     width: 100%;
   }
   
   .inner {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    .inner {
+        width: 90%;
+    }
   }
 
 .carousel-indicators {
