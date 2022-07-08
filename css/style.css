@@ -67,7 +67,7 @@ li {
 
 li .active {
     border-bottom: var(--cyan) solid 2px;
-    opacity: 100%;
+    opacity: 100% !important;
 }
 
 @media (max-width: 768px) {
@@ -140,19 +140,21 @@ li .active {
 .thumbnail-text {
     position: relative;
     top: -190px;
-    backdrop-filter: blur(2px) brightness(80%);
+    backdrop-filter: brightness(70%);
     padding: 1em 0;
     transition: .5s ease;
     margin-bottom: -2em;
     opacity: 0%;
     pointer-events: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.603);
 }
 
 .thumbnail:hover + .thumbnail-text {
     opacity: 100%;
 }
 
+.thumbnail-container a:hover {
+    color: var(--white) !important;
+}
 
 /* Galleria */
 
@@ -199,6 +201,78 @@ li .active {
 
 #left-scroll p, #right-scroll p {
     cursor: pointer;
+}
+
+/* Fullscreen galleria modal */
+
+#gallery-btn:hover > p {
+    transition: .5s ease;
+    filter: brightness(60%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Firefox:in spesiaalit css ominaisuudet (ei tue backdrop-filter:iä) */
+@-moz-document url-prefix() {
+    .outer {
+      background-color: #1b2023e0;
+    }
+}
+
+.gallery-modal {
+    display: none;
+    opacity: 0;
+    z-index: 10 !important;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    transition: all 1s ease .5s;
+    backdrop-filter: blur(15px) brightness(40%);
+}
+
+.gallery-modal.visible {
+    display: block;
+    opacity: 100%;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+    max-height: 1000px;
+    width: 100%;
+  }
+  
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  @media (max-width: 900px) {
+    .inner {
+        width: 90%;
+    }
+  }
+
+.carousel-indicators {
+    bottom: -3rem !important;
+}
+
+.carousel-indicators button.active {
+    transition: ease .5s;
+    background-color: var(--cyan);
 }
 
 /* kalustovuokraus */
@@ -270,70 +344,4 @@ li .active {
 .return-link:hover +.popover {
     opacity: 100%;
     filter: drop-shadow(2px 2px 10px rgba(11, 28, 59, 0.288));
-}
-
-/* Fullscreen galleria modal */
-
-#gallery-btn:hover > p {
-    transition: .5s ease;
-    filter: brightness(60%);
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.gallery-modal {
-    display: none;
-    opacity: 0;
-    z-index: 10 !important;
-    position: fixed;
-    top:0;
-    left:0;
-    height:100%;
-    width: 100%;
-    transition: ease 1s;
-    backdrop-filter: blur(15px) brightness(40%);
-}
-
-.gallery-modal.visible {
-    transition: ease 1s;
-    display: block;
-    opacity: 100%;
-}
-
-.outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 3em;
-  }
-  
-  .middle {
-    display: table-cell;
-    vertical-align: middle;
-    max-height: 1000px;
-    width: 100%;
-  }
-  
-  .inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-
-  @media (max-width: 900px) {
-    .inner {
-        width: 90%;
-    }
-  }
-
-.carousel-indicators {
-    bottom: -3rem !important;
-}
-
-.carousel-indicators button.active {
-    transition: ease .5s;
-    background-color: var(--cyan);
 }

@@ -10,10 +10,10 @@ fetch("../aukioloajat.json")
         /* 
             Aukioloajat -muuttuja sisältää sivun kolme elementtiä: "MaPe", "Lauantai" ja "Sunnuntain" aiktaulutekstit
             ---
-            aukioloajat[0] = MaPe
-            aukioloajat[1] = Lauantai
-            aukioloajat[2] = Sunnuntai
-            aukioloajat[3] = Avainkortilla
+            aukioloajat[0] = MaPe               - index.html, rivi 99
+            aukioloajat[1] = Lauantai           - index.html, rivi 107
+            aukioloajat[2] = Sunnuntai          - index.html, rivi 114
+            aukioloajat[3] = Avainkortilla      - index.html, rivi 118
             ---
 
             Tekstielementeillä on HTML:ässä classit ".aukioloaika" joiden avulla halutut elementit haetaan

@@ -28,7 +28,7 @@
     <!-- Navigaatio bar -->
     <nav class="navbar navbar-dark navbar-expand-md bg-darkgrey text-light py-2 sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand d-none d-md-block position-fixed logoteksti" href="#"><span class="text-light">Kantolan</span><span class="fg-cyan fw-bold">Kunnonsali</span></a>
+            <a class="navbar-brand d-none d-md-block position-absolute logoteksti" href="#"><span class="text-light">Kantolan</span><span class="fg-cyan fw-bold">Kunnonsali</span></a>
             <div class="opacity-0 d-block d-md-none" style="width: 56px;"></div>
 
             <a href="#" class="d-md-none fw-semibold text-decoration-none fs-5 active" id="navheader">Etusivu</a>
@@ -47,7 +47,7 @@
                         <a class="nav-link opacity-75" href="galleria.html">Galleria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="galleria.html#vuokraus">Vuokraa</a>
+                        <a class="nav-link opacity-75" href="galleria.html#vuokraus">Vuokraa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link opacity-75" href="yhteystiedot.html">Yhteystiedot</a>
@@ -271,19 +271,19 @@
         
 
         <!-- logot -->
-        <section class="my-5">
-            <h2 class="text-center text-light mt-5 mb-3">Yhteistyökumppanit</h2>
-            <div class="container mb-4 custom-margin">
-                <div class="custom-margin">
-                    <div class="row align-items-center justify-content-between">  
+        <section class="py-5 bg-fade my-5">
+            <h2 class="text-center text-light fw-light pb-5">Yhteistyökumppanit</h2>
+            <div class="container">
+                    <div class="row align-items-center justify-content-center">  
                         <div class="col-md">
-                            <img src="kuvat/logot/Edenred.png" class="w-50 d-block mx-auto" alt="Edenred -logo">
+                            <img src="kuvat/logot/epassi.png" class="d-block mx-auto" alt="Edenred -logo" style="max-width: 14rem;">
                         </div>
+                        <!-- Vaihdoin edenredin keskelle jotta tulisi vähän parempi tasapaino -->
                         <div class="col-md">
-                            <img src="kuvat/logot/epassi.png" class="w-50 d-block mx-auto" alt="Epassi -logo">
+                            <img src="kuvat/logot/Edenred.png" class="d-block mx-auto" alt="Epassi -logo" style="max-width: 14rem;">
                         </div>
                         <div class="col-lg">
-                            <img src="kuvat/logot/smartum.png" class="w-50 d-block mx-auto" alt="Smartum -logo">
+                            <img src="kuvat/logot/smartum.png" class="d-block mx-auto" alt="Smartum -logo" style="max-width: 14rem;">
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                 <div class="container">
                     <div class="custom-margin">
                         <h2 class="display-2 fw-bold text-center my-0">Palvelut</h2>
-                        <p class="my-0 text-center mb-4 opacity-75 fs-5">“Hyvä sali, halvat hinnat, reilu meininki!”</p>
+                        <p class="my-0 text-center mb-4 opacity-75 fs-5">Kovat treenit vaativat kovat levot</p>
                     </div>
                 </div>
             </div>
@@ -333,7 +333,7 @@
                 <div class="container">
                     <div class="custom-margin">
                         <h2 class="display-2 fw-bold text-center my-0">Kalustovuokraus & Galleria</h2>
-                        <p class="my-0 text-center mb-4 opacity-75 fs-5">Löytyy toiselta sivulta ></p>
+                        <a href="galleria.html" class="text-decoration-none"><p class="my-0 text-center mb-4 opacity-75 fs-5">Löytyy toiselta sivulta ></p></a>
                     </div>
                 </div>
             </div>
@@ -344,15 +344,16 @@
                     <div class="row">
                         <div class="col">
                             <div class="thumbnail-container">
-                                <img src="kuvat/galleria-nelio.jpg" alt="galleria thumbnail" class="thumbnail w-100">
-                                <p class="thumbnail-text text-center fw-semibold fs-5">Tekstiä</p>
+                                <a href="galleria.html">
+                                    <img src="kuvat/galleria-nelio.jpg" alt="galleria thumbnail" class="thumbnail w-100">
+                                    <p class="thumbnail-text text-center fw-semibold fs-5">Tekstiä</p>
+                                </a>
                             </div>
                         </div>
                         
-                        <!-- olen kuvan päällinen flavor text -->
                         <div class="col">
                             <div class="thumbnail-container">
-                                <a href="galleria.html#vuokraus">
+                                <a href="galleria.html#vuokraus" class="text-decoration-none">
                                     <img src="kuvat/vuokra-nelio.jpg" alt="Kalustovuokraus thumbnail" class="thumbnail w-100">
                                     <p class="thumbnail-text text-center fw-semibold fs-5">Tekstiä</p>
                                 </a>
