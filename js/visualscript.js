@@ -1,24 +1,20 @@
 // Vaihtaa nimen navbariin kun scrollataan tarpeeksi alas
 const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+
 firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+
+    // lisätään funktio joka aktivoituu aina kun bootstrapin scrollspy
+    // muuttaa aktiivisen sektion
     let navHeader = document.getElementById("nav-header")
     let currentSection = document.getElementsByClassName("active")[0]
 
-    if (navHeader.innerHTML !== currentSection.innerHTML) {
-        
-        navHeader.innerHTML = currentSection.innerHTML
+    // muutetaan pienten näyttöjen navigaatio otsikko scrollspyn aktiiviseksi sektioniksi (galleria / vuokraa)
+    navHeader.innerHTML = currentSection.innerHTML
 
-        if (!currentSection.parentElement.classList.contains("nav-hide")) {
+    // etsitään elementti jolla on classi .nav-hide ja poistetaan kyseinen classi
+    document.querySelector(".nav-hide").classList.remove("nav-hide")
 
-            let hiddenNavs = document.getElementsByClassName("nav-hide")
-            for (let i = 0; i < hiddenNavs.length; i++) {
-                hiddenNavs[i].classList.remove("nav-hide")
-            }
-
-            currentSection.parentElement.classList.add("nav-hide")
-        }
-    }
-    else {
-        navHeader.innerHTML = "Galleria"
-    }
+    // ja piilotetaan tämänhetkisen aktiivisen sektion otsikko navigaatio listasta
+    // (tämä tehdään sen takia koska aktiiviselle sektionille on jo isompi otsikko nav listan yläpuolella)
+    currentSection.parentElement.classList.add("nav-hide")
 })
