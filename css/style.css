@@ -44,6 +44,14 @@
 
 /* Yleisiä elementtikorjauksia */
 
+.btn:hover {
+    box-shadow: 0 0 .5em var(--cyan);
+    border: 1px solid var(--cyan) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: var(--white) !important;
+    font-weight: 600;
+}
+
 a {
     color: var(--white) !important;
     transition: .5s ease;
@@ -74,6 +82,16 @@ li .active {
     .nav-hide {
         display: none; /* Piilottaa aktiivisen sivun navigaatio elementin listasta, kun se näytetään isompana otsikkona listan päällä */
     }
+}
+
+.border-hover {
+    transition: .5s ease;
+}
+
+.border-hover:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 1px solid var(--cyan);
+    box-shadow: 0 0 .5em var(--cyan);
 }
 
 /* Omat sisennys classit, joita käytetään .containerin ensimmäisessä lapsielementissä */
@@ -150,7 +168,7 @@ li .active {
 }
 
 .hover-animaatio{
-    border: 8px solid;
+    border: 6px solid;
     -webkit-mask: 
       conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
        var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
