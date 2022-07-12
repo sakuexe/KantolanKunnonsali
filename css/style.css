@@ -133,27 +133,20 @@ li .active {
     transition: .5s ease;
 }
 
-.thumbnail:hover {
-    filter: brightness(40%) saturate(90%) drop-shadow(0 1em 1em rgba(2, 19, 34, 0.5));
+.thumbnail-container:hover .thumbnail {
+    filter: brightness(70%) saturate(90%) drop-shadow(0 1em 1em rgba(2, 19, 34, 0.5));
 }
 
 .thumbnail-text {
-    position: relative;
-    top: -190px;
-    backdrop-filter: brightness(70%);
-    padding: 1em 0;
-    transition: .5s ease;
-    margin-bottom: -2em;
-    opacity: 0%;
     pointer-events: none;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
 }
 
-.thumbnail:hover + .thumbnail-text {
-    opacity: 100%;
-}
-
-.thumbnail-container a:hover {
-    color: var(--white) !important;
+.thumbnail-container:hover .thumbnail-text {
+    opacity: 1;
 }
 
 .hover-animaatio{
