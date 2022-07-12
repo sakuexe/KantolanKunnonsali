@@ -89,7 +89,7 @@ for (let index = 0; index < leftScroll.length; index++) {   // sama prosessi kui
 // Gallerialistan indikaattorit
 
 // scrollIndicators ovat div:it thumbnailien alapuolella, tallennetaan ne globaaliin, const muuttujaan
-const scrollIndicators = document.getElementsByClassName("thumbnail-indicators")
+const scrollIndicators = document.querySelectorAll(".thumbnail-indicators")
 
 for(let index = 0; index < scrollIndicators.length; index++) {      // loopataan läpi kaikki indikaattorit ja annetaan niille funktio klikatessa
 
