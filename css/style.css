@@ -311,38 +311,39 @@ li .active {
 .card-img {
     background-position: center;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-color: var(--grey);
     padding: 4rem 0;
     transition: 0.5s ease;
 }
 
 .card-img:hover {
-    padding: 7rem 0;
+    padding: 6rem 0;
     
 }
 
 #jattipannu {
-    background-image: url(../kuvat/card-imgs/jattipannu.jpg);
+    background-image: url(../kuvat/icons/pannu.png);
 }
 
 #makkaragrilli {
-    background-image: url(../kuvat/card-imgs/kaasugrilli.jpg);
+    background-image: url(../kuvat/icons/kaasugrilli.png);
 }
 
 #kahvikone {
-    background-image: url(../kuvat/card-imgs/kahvikone.jpg);
+    background-image: url(../kuvat/icons/pergulaattori.png);
 }
 
 #kaasupullo {
-    background-image: url(../kuvat/card-imgs/kaasukannu.jpg);
+    background-image: url(../kuvat/icons/kaasukannu.png);
 }
 
 #teltta {
     /* 
-    background-image: url(../kuvat/card-imgs/teltta.jpg);   -käytä tätä kun teltta on mukana valikoimassa
+    background-image: url(../kuvat/icons/teltta.png);   -käytä tätä kun teltta on mukana valikoimassa
     */
-    background-image: url(../kuvat/card-imgs/teltta-disabled.jpg);
+    background-image: url(../kuvat/icons/teltta-disabled.png);
 }
 
 /* Popup */
