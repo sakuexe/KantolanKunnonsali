@@ -373,3 +373,15 @@ li .active {
     opacity: 100%;
     filter: drop-shadow(2px 2px 10px rgba(11, 28, 59, 0.288));
 }
+
+/* Facebook Embed */
+
+.fb-container {
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    .fb-container {
+        overflow: scroll;
+    }
+}
