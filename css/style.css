@@ -232,7 +232,7 @@ li .active {
 
 /* Fullscreen galleria modal */
 
-#gallery-btn:hover > p {
+.gallery-btn:hover > p {
     transition: .5s ease;
     filter: brightness(60%);
     text-decoration: underline;

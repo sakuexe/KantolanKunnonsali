@@ -32,29 +32,37 @@ slider.addEventListener('mousemove', e => {
 
 // galleria sivun fullscreen galleria -modali
 
-const galleryButton = document.getElementById("gallery-btn")
-const galleryModal = document.getElementById("gallery-modal")
+const galleryButton = document.querySelectorAll(".gallery-btn")
+const galleryModal = document.querySelector("#gallery-modal")
 const navBar = document.getElementsByTagName("nav")[0]
 
-galleryButton.addEventListener("click", _ => {
+for (let index = 0; index < galleryButton.length; index++) {
 
-    // klikatessa "selaa salimme kuvia tästä >" tekstiä annetaan gallerialle .visible classi
-    // joka tekee elementistä näkyvän
-    galleryModal.classList.add("visible")
+    galleryButton[index].addEventListener("click", _ => {
 
-    // poistetaan myös navigaatio palkki näkyvistä
-    navBar.classList.add("d-none")
-})
+        // klikatessa "selaa salimme kuvia tästä >" tekstiä annetaan gallerialle .visible classi
+        // joka tekee elementistä näkyvän
+        galleryModal.classList.add("visible")
+    
+        // poistetaan myös navigaatio palkki näkyvistä
+        navBar.classList.add("d-none")
+    })
+}
+
 
 galleryModal.addEventListener("click", clickedElement => {
 
+    let carouselButtons = document.querySelectorAll(".carousel-indicators")
+    console.log(carouselButtons)
     // tarkistetaan että onko klikattu elementti kuvagallerian ulkopuolella
-    if (clickedElement.target.classList.contains("middle"))
-
+    if (clickedElement.target.classList.contains("middle")) {
+        
         // jos on klikattu ulkopuolelle niin poistetaan galleria näkyvistä
         galleryModal.classList.remove("visible")
         // ja palautetaan navigaatiopalkki takaisin näkyviin
         navBar.classList.remove("d-none")
+
+    }
 })
 
 // Gallerian thumbnailien scrollaus nappulat
