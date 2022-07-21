@@ -148,15 +148,22 @@ li .active {
 
 img.palvelut {
     filter: grayscale(100%) contrast(120%) sepia(10%);
+    transition: all .5s ease;
+}
+
+img.palvelut:hover {
+    filter: grayscale(60%) contrast(140%) sepia(10%);
+    box-shadow: 0 1em 1em #1b202363;
 }
 
 .thumbnail {
-    filter: brightness(80%) saturate(0%);
+    filter: grayscale(100%) contrast(110%) sepia(20%) brightness(100%);
     transition: .5s ease;
 }
 
 .thumbnail-container:hover .thumbnail {
-    filter: brightness(70%) saturate(90%) drop-shadow(0 1em 1em rgba(2, 19, 34, 0.5));
+    filter: grayscale(50%) contrast(140%) sepia(20%) brightness(60%);
+    box-shadow: 0 1em 1em #1b202363;
 }
 
 .thumbnail-text {
