@@ -114,7 +114,7 @@ li .active {
 /* Background kuvat */
 
 .bg-header {
-    background-image: url(../kuvat/header-bg.jpg);
+    background-image: url(../kuvat/header-bg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,19 +131,19 @@ li .active {
 }
 
 #kalusto-galleria {
-    background-image: url(../kuvat/vuokra-ja-galleria.jpg);
+    background-image: url(../kuvat/vuokra-ja-galleria.webp);
 }
 
 #palvelut {
-    background-image: url(../kuvat/palvelut.jpg);
+    background-image: url(../kuvat/palvelut.webp);
 }
 
 #hinnasto {
-    background-image: url(../kuvat/hinnasto.jpg);
+    background-image: url(../kuvat/hinnasto.webp);
 }
 
 #meista {
-    background-image: url(../kuvat/meista.jpg);
+    background-image: url(../kuvat/meista.webp);
 }
 
 img.palvelut {
@@ -309,7 +309,7 @@ img.palvelut {
 /* kalustovuokraus */
 
 #kalustovuokraus {
-    background-image: url(../kuvat/kalustovuokraus.jpg);
+    background-image: url(../kuvat/kalustovuokraus.webp);
 }
 
 .card-img {

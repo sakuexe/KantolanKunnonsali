@@ -1,0 +1,9 @@
+
+{
+    "MaPe":"12:00 - 20:00",
+    "Lauantai": "Avainkortilla",
+    "Sunnuntai": "Avainkortilla",
+    "Avainkortilla": "06:30 - 22.30",
+
+    "Ohje": "Muistathan kirjoittaa ajat muodossa TT:MM - TT:MM"
+}
