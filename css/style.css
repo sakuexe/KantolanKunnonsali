@@ -70,12 +70,17 @@ a:hover:not(.logoteksti):not(li a):not(.btn):not(.thumbnail-link) {
 }
 
 li {
-    transition: 1s ease;
+    transition: .5s ease;
 }
 
 li .active {
     border-bottom: var(--cyan) solid 2px;
     opacity: 100% !important;
+}
+
+.lisaravinteita li:hover {
+    opacity: 50%;
+    border-bottom: solid 1px #168FC3 !important;
 }
 
 @media (max-width: 768px) {
