@@ -167,7 +167,7 @@ img.palvelut:hover {
 }
 
 .thumbnail-container:hover .thumbnail {
-    filter: grayscale(50%) contrast(140%) sepia(20%) brightness(60%);
+    filter: grayscale(50%) contrast(130%) sepia(20%) brightness(90%);
     box-shadow: 0 1em 1em #1b202363;
 }
 
