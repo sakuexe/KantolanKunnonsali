@@ -52,8 +52,6 @@ for (let index = 0; index < galleryButton.length; index++) {
 
 galleryModal.addEventListener("click", clickedElement => {
 
-    let carouselButtons = document.querySelectorAll(".carousel-indicators")
-    console.log(carouselButtons)
     // tarkistetaan että onko klikattu elementti kuvagallerian ulkopuolella
     if (clickedElement.target.classList.contains("middle")) {
         

@@ -3,7 +3,7 @@
 fetch("../aukioloajat.json")
     .then(response => response.json())
     .then(jsondata => {
-        let aukioloajat = document.getElementsByClassName("aukioloaika")
+        let aukioloajat = document.querySelectorAll(".aukioloaika")
 
         /* 
             Aukioloajat -muuttuja sisältää sivun kolme elementtiä: "MaPe", "Lauantai" ja "Sunnuntain" aiktaulutekstit
