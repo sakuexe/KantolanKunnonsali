@@ -1,9 +1,13 @@
 
 {
-    "MaPe":"12:00 - 20:00",
+    "Ma":"12:00 - 20:00",
+    "Ti":"12:00 - 20:00",
+    "Ke":"12:00 - 20:00",
+    "To":"12:00 - 20:00",
+    "Pe":"12:00 - 20:00",
     "Lauantai": "Avainkortilla",
     "Sunnuntai": "Avainkortilla",
-    "Avainkortilla": "06:30 - 22.30",
+    "Avainkortilla": "05:30 - 22.30",
 
     "Ohje": "Muistathan kirjoittaa ajat muodossa TT:MM - TT:MM"
 }
