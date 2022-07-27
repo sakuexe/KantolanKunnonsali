@@ -1,10 +1,10 @@
 
 {
-    "Ma":"12:00 - 20:00",
-    "Ti":"12:00 - 20:00",
-    "Ke":"12:00 - 20:00",
-    "To":"12:00 - 20:00",
-    "Pe":"12:00 - 20:00",
+    "Maanantai":"12:00 - 20:00",
+    "Tiistai":"12:00 - 20:00",
+    "Keskiviikko":"12:00 - 20:00",
+    "Torstai":"12:00 - 20:00",
+    "Perjantai":"12:00 - 20:00",
     "Lauantai": "Avainkortilla",
     "Sunnuntai": "Avainkortilla",
     "Avainkortilla": "05:30 - 22.30",
