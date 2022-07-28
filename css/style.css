@@ -408,8 +408,3 @@ img.palvelut:hover {
     background: #555;
     cursor: grab;
 }
-
-.kavijalaskuri{
-    mix-blend-mode: lighten;
-    filter: hue-rotate(80deg) brightness(80%);
-} 
